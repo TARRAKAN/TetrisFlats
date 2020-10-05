@@ -5,7 +5,7 @@
 int main() {
 	sf::RenderWindow tetrisWindow(sf::VideoMode(320, 480), "TETRIS");
 	tetrisWindow.clear(sf::Color::White);
-	Figure figure(1);
+	Figure figure(4);
 	
 	while (tetrisWindow.isOpen()) { // MAIN LOOP
 		tetrisWindow.clear(sf::Color::White);

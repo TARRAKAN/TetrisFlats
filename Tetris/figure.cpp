@@ -84,5 +84,11 @@ void Figure::goRight(){
 }
 
 void Figure::rotate() {
-	return;
+	Coordinates p = a[1];
+	for (int i = 0; i < 4; i++){
+		int x = a[i].y - p.y;
+		int y = a[i].x - p.x;
+		a[i].x = p.x - x;
+		a[i].y = p.y + y;
+	}
 }
