@@ -73,3 +73,16 @@ void Figure::setTexture(){
 	sFlats.setTexture(tFlats);
 	sFlats.setTextureRect(sf::IntRect(0, 0, 18, 18));
 }
+
+void Figure::goLeft() {
+	for (int i = 0; i < 4; i++) 
+		--a[i].x;
+}
+void Figure::goRight(){
+	for (int i = 0; i < 4; i++)
+		++a[i].x;
+}
+
+void Figure::rotate() {
+	return;
+}

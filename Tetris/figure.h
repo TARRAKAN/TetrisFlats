@@ -2,6 +2,7 @@
 #include <SFML/Graphics.hpp>
 class Figure {
 private:
+	int hPlace = 0;
 	int shape[4] = {0};
 	struct Coordinates{
 		int x, y;
@@ -14,5 +15,8 @@ public:
 	void drawOn(sf::RenderWindow &window);
 	Figure(int type);
 	void setTexture();
+	void goLeft();
+	void goRight();
+	void rotate();
 };
 #endif //_FIGURE_H_
